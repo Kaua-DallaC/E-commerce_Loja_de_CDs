@@ -1,11 +1,11 @@
-// DADOS DOS PRODUTOS
+// Dados dos Produtos
 
 const data = [
   {
     id: "1",
     artista: "Charli XCX",
     titulo: "Brat",
-    preco: 10.0,
+    preco: 59.9,
     descricao:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum sunt velit nisi, optio, quasi repellat itaque inventore expedita nulla pariatur ad eligendi nobis quo corporis. Quasi quos aspernatur tenetur?",
     especificacao:
@@ -17,7 +17,7 @@ const data = [
     id: "2",
     artista: "Lady Gaga",
     titulo: "Mayhem",
-    preco: 10.0,
+    preco: 50.0,
     descricao:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum sunt velit nisi, optio, quasi repellat itaque inventore expedita nulla pariatur ad eligendi nobis quo corporis. Quasi quos aspernatur tenetur?",
     especificacao:
@@ -26,51 +26,75 @@ const data = [
     categoria: "pop",
   },
   {
-    artista: "Pink Floyd",
-    titulo: "The Dark Side Of The Moon",
-    preco: 80.0,
+    id: "3",
+    artista: "Pitty",
+    titulo: "Anacrônico",
+    preco: 39.9,
+    descricao:
+      "Cd Pitty Anacrônico Lacrado Novo Informações sobre o cd: 'Pitty conquistou o Brasil com o lançamento do seu primeiro álbum “Admirável Chip Novo” (Deck), em 2003. O disco seguinte, “Anacrônico”, veio para garantir a sua consagração como um exemplo do verdadeiro rock ‘à brasileira’ e volta às lojas em inédito formato de cd num lançamento da Polysom",
+    especificacao:
+      "Faixas do CD: A Saideira Anacrônico De Você Memórias Dejá Vú Aahhh...! Ignorin'u Brinquedo Torto Na Sua Estante No Escuro Quem Vai Queimar? Guerreiros São Guerreiros Querer Depois",
+    imagem:
+      "https://m.media-amazon.com/images/I/51qEOXnCFsL._AC_SX300_SY300_QL70_ML2_.jpg",
     categoria: "rock",
   },
   {
-    artista: "Pitty",
-    titulo: "Anacrônico",
-    preco: 29.9,
+    id: "4",
+    artista: "Pink Floyd",
+    titulo: "The Dark Side Of The Moon",
+    preco: 89.9,
+    descricao:
+      "Original studio album remastered by James Guthrie in gatefold sleeve with 12-page booklet",
+    especificacao: "Dimensões do produto: 13,97 x 0,25 x 12,19 cm; 45,36 g",
+    imagem: "https://m.media-amazon.com/images/I/61OBOiVbkeL._AC_SX522_.jpg",
+    categoria: "rock",
   },
   {
-    artista: "Rita Lee",
-    titulo: "Build Up",
-    preco: 10.0,
+    id: "5",
+    artista: "Gal Costa",
+    titulo: "Gal Costa",
+    preco: 120.0,
+    descricao:
+      "Gal Costa (Japanese Reissue) (Brazil's Treasured Masterpieces 1950s - 2000s)Gal Costa (Japanese Reissue) (Brazil's Treasured Masterpieces 1950s - 2000s)",
+    especificacao: "Dimensões da embalagem: 14,2 x 12,3 x 1,1 cm; 90 g",
+    imagem: "https://m.media-amazon.com/images/I/71A1KtyWV8L._AC_SX522_.jpg",
+    categoria: "mpb",
   },
-  // {
-  //   artista: "FKA Twigs",
-  //   titulo: "Eusexua",
-  // },
-  // {
-  //   artista: "Lorde",
-  //   titulo: "Melodrama",
-  // },
-  // {
-  //   artista: "Björk",
-  //   titulo: "Homogenic",
-  // },
-  // {
-  //   artista: "Michael Jackson",
-  //   titulo: "Thriller",
-  // },
-  // {
-  //   artista: "Madonna",
-  //   titulo: "Music",
-  // },
-  // {
-  //   artista: "Rosalia",
-  //   titulo: "Lux",
-  //   imagem: "https://m.media-amazon.com/images/I/614lk0s4RcL._SL1500_.jpg",
-  // },
-  // {
-  //   artista: "Madonna",
-  //   titulo: "Music",
-  // },
+  {
+    id: "6",
+    artista: "Poppy",
+    titulo: "Flux",
+    preco: 140.0,
+    descricao:
+      "O sexto álbum de estúdio da Poppy continua o aventureirismo sônico do hino industrial radiante de diamantes 'New Way Out', com Poppy e o coprodutor Jordan Fish (ex-Bring Me the Horizon). É o som emocionante de um artista em constante evolução redefinindo seu legado uma música de cada vez, com uma compreensão bem-vinda de que ainda há muita inspiração a ser encontrada nas margens ainda a ser explorada, nas profundezas dos espaços negativos.",
+    especificacao: "Dimensões da embalagem: 14,2cm; 90 g",
+    imagem: "https://m.media-amazon.com/images/I/81ZMmrTwBPS._AC_SX522_.jpg",
+    categoria: "rock",
+  },
+  {
+    id: "7",
+    artista: "Taylor Swift",
+    titulo: "Midnights",
+    preco: 80.0,
+    descricao:
+      "Taylor Swift's 2022 studio album 'Midnights', released October 21st 2022. It is a collection of music written in the middle of the night, a journey through terrors and sweet dreams. The floors we pace and the demons we face - the stories of 13 sleepless nights scattered throughout Taylor's life. The 'Lavender' CD version is a Deluxe Edition with 3 extra tracks to the other CD's, so 16 tracks in total.",
+    especificacao: "Dimensões da embalagem: 14,2 x 12,4",
+    imagem: "https://m.media-amazon.com/images/I/41LHY++72PL._AC_.jpg",
+    categoria: "pop",
+  },
+  {
+    id: "8",
+    artista: "Rita Lee",
+    titulo: "Lança Perfume",
+    preco: 75.0,
+    descricao: "Rita Lee, Lança Perfume. (1980).",
+    especificacao: "Dimensões da embalagem: 14,2 x 12,3 x 1,1 cm; 90 g",
+    imagem: "https://m.media-amazon.com/images/I/61QexWZKWOL._AC_SX522_.jpg",
+    categoria: "mpb",
+  },
 ];
+
+// Página de Produtos
 
 const produtosContainer = document.querySelector("#produtos-container");
 const inputBusca_produtos = document.querySelector("#inputBusca_produtos");
@@ -185,9 +209,7 @@ const displayData_Detalhes = (data) => {
 
 window.addEventListener("load", () => displayData_Detalhes(data));
 
-//
 // Página de Carrinho de Compras
-//
 
 let arrCarrinho = JSON.parse(localStorage.getItem("produtoSalvo")) || [];
 
@@ -209,44 +231,6 @@ function adicionarAoCarrinhoComQtd(id) {
 
   displayData_Carrinho();
 }
-
-// const carrinhoContainer = document.querySelector("#carrinho-container");
-
-// const armazenadoCarrinho = localStorage.getItem("produtoSalvo");
-
-// function displayData_Carrinho() {
-//   const produto = data.find((item) => item.id === armazenadoCarrinho);
-
-//   if (!armazenadoCarrinho) return;
-//   carrinhoContainer.innerHTML = `<div class="d-flex gap-4 border border-3 border-black p-3 bg-secondary bg-opacity-25">
-//         <div class="d-flex flex-column gap-5 nowrap align-items-start">
-//           <div class="d-flex flex-column gap-1">
-//             <h4 class="fw-bold">${produto.artista + " - " + produto.titulo}</h4>
-//             <h4>${produto.preco}</h4>
-//           </div>
-//           <select class="border border-3 border-black">
-//             <option disabled selected>Quantidade:</option>
-//             <option>1</option>
-//             <option>2</option>
-//             <option>3</option>
-//           </select>
-//         </div>
-//         <img class="img-fluid produto-carrinho-imagem border border-3 border-black" src="${produto.imagem}">
-//       </div>
-
-//       <div class="border border-3 border-black p-3 pb-1 pe-5 d-flex flex-column gap-5">
-//         <div>
-//           <h3 class="border-bottom border-3 border-black fs-5">Subtotal:</h3>
-//           <p>2x ${produto.artista + " - " + produto.titulo} R$ 80,99 - R$: 161,98</p>
-//         </div>
-
-//         <div>
-//           <h3 class="border-bottom border-3 border-black fs-5">Total:</h3>
-//           <p>R$: 161,98</p>
-//         </div>
-//       </div>`;
-// }
-// window.addEventListener("load", () => displayData_Carrinho());
 
 const carrinhoContainer = document.querySelector("#carrinho-container");
 
@@ -339,7 +323,7 @@ function removerDoCarrinho(id) {
   displayData_Carrinho();
 }
 
-//
+// Filtros
 
 function filtrarCategoria(categoria) {
   console.log("Filtrando categoria:", categoria);
