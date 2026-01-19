@@ -1,0 +1,78 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.titulo {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.banner-promo {
+  width: 1200px;
+  height: 600px;
+}
+
+.produtos-destaque {
+  width: 350px;
+  height: 350px;
+}
+
+.sobre-produto {
+  width: 325px;
+  height: 325px;
+}
+
+.produto-carrinho-imagem {
+  width: 100px;
+  height: 100px;
+}
+
+.secao {
+  height: 550px;
+}
+
+@media (max-width: 991px) {
+  .tela-pequena {
+    width: 1199px;
+  }
+  .fonte-xl {
+    font-size: x-large;
+  }
+  .fonte-xxl {
+    font-size: xx-large;
+  }
+}
+
+@media (max-width: 1350px) {
+  .tela-grande {
+    width: 1351px;
+  }
+}
+
+.h300 {
+  height: 300px;
+}
+
+.h200 {
+  height: 200px;
+}
+
+.h900 {
+  height: 900px;
+}
+
+.h50 {
+  height: 50px;
+}
