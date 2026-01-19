@@ -7,9 +7,8 @@ const data = [
     titulo: "Brat",
     preco: 59.9,
     descricao:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum sunt velit nisi, optio, quasi repellat itaque inventore expedita nulla pariatur ad eligendi nobis quo corporis. Quasi quos aspernatur tenetur?",
-    especificacao:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum sunt velit nisi, optio, quasi repellat itaque inventore expedita nulla pariatur ad eligendi nobis quo corporis.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum sunt velit nisi, optio, quasi repellat itaque inventore expedita nulla pariatur ad eligendi nobis quo corporis. Quasi quos aspernatur tenetur Brat?",
+    especificacao: "Dimensões do produto: 13,97 x 0,25 x 12,19 cm; 45,36 g",
     imagem: "https://m.media-amazon.com/images/I/614TkS7FUcL._AC_SL1500_.jpg",
     categoria: "pop",
   },
@@ -19,7 +18,7 @@ const data = [
     titulo: "Mayhem",
     preco: 50.0,
     descricao:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum sunt velit nisi, optio, quasi repellat itaque inventore expedita nulla pariatur ad eligendi nobis quo corporis. Quasi quos aspernatur tenetur?",
+      "Mayhem (estilizado em letras maiúsculas) é o oitavo[a] álbum de estúdio da artista musical estadunidense Lady Gaga, lançado em 7 de março de 2025 através da Streamline e Interscope Records.",
     especificacao:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum sunt velit nisi, optio, quasi repellat itaque inventore expedita nulla pariatur ad eligendi nobis quo corporis.",
     imagem: "https://m.media-amazon.com/images/I/611y4lxl27L._AC_SL1500_.jpg",
@@ -106,14 +105,14 @@ const displayData_Produtos = (data) => {
   data.forEach((e) => {
     produtosContainer.innerHTML += `
       <div class="col">
-        <div class="bg-white border border-3 border-black h-100 d-flex flex-column p-2">
+        <div class="bg-white border border-0 h-100 d-flex flex-column p-2">
           <a onClick="irDetalhes('${e.id}')" class="link-underline link-underline-opacity-0" href="/detalhes.html">
             <div class="border border-3 border-black mb-2 d-flex justify-content-center align-items-center" style="height: 200px;">
               <img class="img-fluid h-100" src="${e.imagem}" alt="${e.titulo}">
             </div>
-            <h3 class="text-black fs-5 fw-bold text-center">${e.artista} - ${e.titulo}</h3>
+            <h3 class="text-black fs-5 fw-bold">${e.artista} - ${e.titulo}</h3>
           </a>
-          <div class="d-flex justify-content-between align-items-center mt-auto">
+          <div class="d-flex gap-3 align-items-center mt-auto">
             <h3 class="text-black fs-6 fst-italic mb-0">R$ ${e.preco.toFixed(2)}</h3>
             <button onclick="adicionarAoCarrinho('${e.id}')" class="bg-white border-0 p-0"><img src="/imagens/shopping-cart.svg" alt="Adicionar ao carrinho"></button>
           </div>
@@ -240,7 +239,8 @@ const armazenadoCarrinho =
 function displayData_Carrinho() {
   if (arrCarrinho.length === 0) {
     carrinhoContainer.innerHTML = `
-      <div class="text-center">
+      <div class="h500 d-flex flex-column gap-4 align-items-center justify-content-center">
+      <img class="h50" src="/imagens/shopping-cart.svg">
         <h3>Carrinho está vazio :(</h3>
       </div>
     `;
